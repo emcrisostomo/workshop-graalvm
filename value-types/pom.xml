@@ -1,5 +1,6 @@
 <!--
-Copyright (c) 2014, Oracle America, Inc.
+Copyright (c) 2014 Oracle America, Inc.
+Copyright (c) 2019 Accenture
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -67,10 +68,8 @@ THE POSSIBILITY OF SUCH DAMAGE.
           -->
         <jmh.version>1.21</jmh.version>
 
-        <!--
-            Java source/target to use for compilation.
-          -->
-        <javac.target>1.8</javac.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
 
         <!--
             Name of the benchmark Uber-JAR to generate.
@@ -84,16 +83,16 @@ THE POSSIBILITY OF SUCH DAMAGE.
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.1</version>
-                <configuration>
-                    <compilerVersion>${javac.target}</compilerVersion>
-                    <source>${javac.target}</source>
-                    <target>${javac.target}</target>
-                </configuration>
+<!--                <configuration>-->
+<!--                    <compilerVersion>${javac.target}</compilerVersion>-->
+<!--                    <source>${javac.target}</source>-->
+<!--                    <target>${javac.target}</target>-->
+<!--                </configuration>-->
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>2.2</version>
+                <version>3.2.1</version>
                 <executions>
                     <execution>
                         <phase>package</phase>

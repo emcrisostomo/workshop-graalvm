@@ -10,7 +10,7 @@ clean:
 	./mvnw clean
 
 .PHONY: run
-run: $(JARFIlE)
+run: $(JARFILE)
 	java -jar $(JARFILE)
 
 $(JARFILE): $(SOURCES)

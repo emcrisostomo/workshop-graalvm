@@ -1,4 +1,3 @@
-
 JARFILE= ./target/benchmarks.jar
 SOURCES= src/main/java/valhallaBench/Multiply.java \
          src/main/java/valhallaBench/Complex.java

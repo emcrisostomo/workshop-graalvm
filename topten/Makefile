@@ -1,5 +1,5 @@
 JARFILE= ./target/topten-1.0.jar
-SOURCES= TopTen.java
+SOURCES= src/main/java/topten/TopTen.java
 
 .PHONY: package
 package: $(JARFILE)
